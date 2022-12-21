@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:msym_calc/main_display.dart';
+import 'text_data.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         home: Scaffold(
             appBar: AppBar(
-              title: Text('msymCalclator'),
+              title: const Text(TextData.appTitle),
             ),
             body: Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
