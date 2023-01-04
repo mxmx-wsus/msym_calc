@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 class MainDisplay extends StatefulWidget {
-  MainDisplayState createState() => MainDisplayState();
+  _MainDisplayState createState() => _MainDisplayState();
 }
 
-class MainDisplayState extends State<MainDisplay> {
+class _MainDisplayState extends State<MainDisplay> {
   String _expression = '1+1';
   @override
   Widget build(BuildContext context) {
