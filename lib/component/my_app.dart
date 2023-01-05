@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:msym_calc/view/calc_keybord.dart';
 import 'package:msym_calc/view/main_display.dart';
 import '../constant/text_data.dart';
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
             ),
             body: Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [MainDisplay()],
+              children: [MainDisplay(), CalcKeyboard()],
             )));
   }
 }
