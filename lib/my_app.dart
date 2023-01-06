@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:msym_calc/view/calc_keybord.dart';
-import 'package:msym_calc/view/main_display.dart';
-import '../constant/text_data.dart';
+import 'package:msym_calc/component/calc_keybord.dart';
+import 'package:msym_calc/component/main_display.dart';
+import 'constant/text_data.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);

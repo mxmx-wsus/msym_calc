@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:msym_calc/view/calc_button.dart';
+import 'package:msym_calc/component/calc_button.dart';
 
 class CalcKeyboard extends StatelessWidget {
   const CalcKeyboard({Key? key}) : super(key: key);
