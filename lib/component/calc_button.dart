@@ -1,24 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:msym_calc/provider/display_contoroller_provider.dart';
 
-final DisplayControllerProvider = StateProvider((ref) => _displayController);
-
-String _displayController = '0';
-String get displayController => _displayController;
-
-class CalcButton extends StatelessWidget {
+class CalcButton extends ConsumerWidget {
   final String keyWord;
   const CalcButton(
     this.keyWord, {
     Key? key,
   }) : super(key: key);
 
-  void addDisplayController() {
-    _displayController = keyWord;
-  }
-
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return TextButton(
       child: Center(
         child: Text(
@@ -28,7 +20,7 @@ class CalcButton extends StatelessWidget {
       ),
       onPressed: () {
         //ボタンが押されたら「displayControllerProvider」に「_keyWord」を追加する。
-        addDisplayController();
+        ref.read(displayControllerProvider.notifier).update((ref) => keyWord);
       },
     );
   }
