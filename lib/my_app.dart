@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:msym_calc/component/calc_keybord.dart';
+import 'package:msym_calc/component/calc_keyboard.dart';
 import 'package:msym_calc/component/main_display.dart';
 import 'constant/text_data.dart';
 
